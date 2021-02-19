@@ -1,7 +1,7 @@
 package com.ocp.day02;
 
 public class Student {
-    public String SchoolName;
+    public static String SchoolName;
     public String name;
     public int age;
     
