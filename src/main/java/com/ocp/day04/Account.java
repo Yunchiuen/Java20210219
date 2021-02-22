@@ -6,7 +6,7 @@ public class Account {
 
     //餘額查詢方法
     public void printMoney() {
-        System.out.printf("$%d\n", money);
+        System.out.printf("餘額$%d\n", money);
     }
 
     //提款方法
