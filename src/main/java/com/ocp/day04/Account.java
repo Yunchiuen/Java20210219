@@ -20,6 +20,7 @@ public class Account {
 
         if (x > money) {
             System.out.println("提款金額不足");
+            return;
         }
 
         if (x > 10_0000) {
@@ -43,6 +44,7 @@ public class Account {
 
         if (x %100!=0) {
             System.out.println("存款金額必須是100的倍數");
+            return;
         }
 
         if (x > 10_0000) {

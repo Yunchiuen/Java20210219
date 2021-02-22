@@ -11,7 +11,7 @@ public class ATMSystem {
         System.out.println("1.提款");
         System.out.println("2.存款");
         System.out.println("3.查詢");
-        System.out.println("4.離開");
+        System.out.println("0.離開");
         System.out.println("---------");
         
         Scanner sc = new Scanner(System.in);
