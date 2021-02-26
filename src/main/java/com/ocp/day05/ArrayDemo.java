@@ -1,5 +1,5 @@
 
-package com.ocp.day06;
+package com.ocp.day05;
 
 import java.util.Arrays;
 
