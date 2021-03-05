@@ -6,6 +6,11 @@ public class StringUpdate {
         x = x.concat("8");
     }
 
+    public static String UpdateString2(String x) {
+        x = x.concat("8");
+        return x;
+    }
+
     public static void UpdateStringBuilder(StringBuilder y) {
         y = y.append("8");
     }
@@ -18,5 +23,7 @@ public class StringUpdate {
         UpdateStringBuilder(y);
         System.out.println(x);
         System.out.println(y);
+        x = UpdateString2(x);
+        System.out.println(x);
     }
 }
