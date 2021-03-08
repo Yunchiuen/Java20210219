@@ -7,6 +7,17 @@ public class Employee {
     private int age;
     private int salary;
 
+    public Employee() {
+
+    }
+
+    public Employee(String name, String language, int age, int salary) {
+        this.name = name;
+        this.language = language;
+        this.age = age;
+        this.salary = salary;
+    }
+
     //進行屬性封裝get/set
     public String getName() {
         return name;
@@ -39,9 +50,16 @@ public class Employee {
     }
 
     public void setSalary(int salary) {
-        if (age > 25000) {
+        if (salary > 25000) {
             this.salary = salary;
         }
     }
+
+    //覆寫
+    @Override
+    public String toString() {
+        return "Employee{" + "name=" + name + ", language=" + language + ", age=" + age + ", salary=" + salary + '}';
+    }
+    
 
 }
