@@ -9,7 +9,7 @@ public class Anonymous5 {
     public static void main(String[] args) {
         //使用lambda實現bmi
         //身高170 體重60
-        BMI bmi=(double h,double w)->{return w/Math.pow(h/100, 2);};
+        BMI bmi=(double h,double w)->{return w/Math.pow(h/100, 2);};//身高/100的平方
         System.out.printf("%.2f",bmi.calc(170, 60));
     }
 }
