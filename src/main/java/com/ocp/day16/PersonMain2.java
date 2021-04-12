@@ -16,7 +16,7 @@ public class PersonMain2 {
         ToDoubleFunction<Person> getBmi=(p)->p.getW()/Math.pow(p.getH()/100, 2);
         DoubleUnaryOperator fbmi= bmi -> Math.round(bmi*100)/100.0;
         Stream.of(people)
-                .flatMap(p -> Stream.of(p))
+                .flatMap(p -> Stream.of(p))//平面轉換
                 .mapToDouble(getBmi)
                 .map(fbmi)//4捨5入
                 .forEach(System.out::println);

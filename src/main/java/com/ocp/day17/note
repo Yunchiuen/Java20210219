@@ -1,0 +1,4 @@
+Collection  集合    動態陣列
+Set	資料不重複
+List	資料可重複
+Map	結構是(key就是set,value就是List)->EntrySet
